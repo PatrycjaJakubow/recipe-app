@@ -1,0 +1,131 @@
+mat-card {
+  border-radius: 20px;
+  border: 1px solid var(--mat-divider-color);
+  background-color: #fafafa;
+  margin: 5% auto;
+  padding: 2%;
+  color: #06285d;
+}
+
+mat-card-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10%;
+  color: #06285d;
+}
+
+mat-card-content {
+  width: 100%;
+}
+
+mat-error {
+  margin-top: -15px;
+}
+
+mat-list {
+  width: 100%;
+}
+
+.bin {
+  margin-top: -20px;
+}
+
+h2,
+li,
+mat-card-title {
+  color: #06285d;
+}
+
+li {
+  width: calc(100% - 20px);
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  border: 1px dotted;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+  border-color: var(--mat-divider-color);
+  height: 48px;
+}
+
+.uploaded-image {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+button {
+  margin-bottom: 5%;
+}
+
+.add-recipe-button,
+.button-color {
+  background-color: rgb(237 182 84) !important;
+  color: #06285d !important;
+}
+
+.mat-form-field {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.mat-mdc-form-field {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  mat-card {
+    max-width: 100%;
+    padding: 5%;
+  }
+
+  .uploaded-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  mat-card {
+    max-width: 90%;
+    padding: 4%;
+  }
+
+  .uploaded-image {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  mat-card {
+    max-width: 80%;
+    padding: 3%;
+  }
+
+  .uploaded-image {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  mat-card {
+    max-width: 50%;
+    padding: 2%;
+  }
+
+  .uploaded-image {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1441px) {
+  mat-card {
+    max-width: 30%;
+    padding: 2%;
+  }
+
+  .uploaded-image {
+    width: 60%;
+  }
+}

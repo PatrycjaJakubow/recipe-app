@@ -1,0 +1,94 @@
+mat-card-title, button {
+  color: #06285D !important;
+  font-weight: bolder;
+}
+mat-icon {
+ size: 20%;
+}
+
+button:hover {
+  background-color: rgb(237 182 84) !important;
+}
+
+.btn-left {
+  background-color: rgb(237 182 84) !important;
+
+}
+.btn-left:hover {
+  background-color: #ffffff !important;
+}
+.btn-right {
+  font-size:medium;
+}
+
+.btn-right:hover {
+  background-color: rgb(237 182 84) !important;
+
+}
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.wiggle-animation:hover {
+  animation: wiggle 3s ease-in-out infinite; 
+}
+
+.wiggle-animation:hover {
+  animation-delay: 0.2s;
+}
+.recipes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+    margin: 2rem auto; 
+    max-width: 60rem; 
+  }
+  .btns {
+    width: 50%;
+    padding: 2%;
+    border: none;  
+  }
+.icon {
+  transform: scale(0.8);
+}
+  .recipe-card {
+    flex: 1 1 calc(33.333% - 1rem); 
+    box-sizing: border-box;
+    max-width: calc(33.333% - 1rem);
+  }
+mat-card-title {
+  height: 70px;
+}
+ 
+  .duration {
+    position: absolute;
+    top: -10px; 
+    right: -10px; 
+    background-color: #06285D;
+    color: #fafafa;
+    padding: 4px 12px;
+    border-radius: 20px; 
+    font-size: 10px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+    height: 35px;
+  }
+  @media (max-width: 768px) {
+    .recipe-card {
+      flex: 1 1 calc(50% - 1rem); 
+      max-width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .recipe-card {
+      flex: 1 1 100%; 
+      max-width: 100%;
+    }
+  }
+  
